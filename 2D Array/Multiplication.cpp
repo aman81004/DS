@@ -44,6 +44,6 @@ int main(){
                 cout<<res[i][j];
             }
             cout<<endl;
-        }
+        } 
     }
 }
