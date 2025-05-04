@@ -23,8 +23,7 @@ int main(){
             if(s[j]==s[i]) count++;
         }
         if(count==max){
-            cout<<ch;
+            cout<<ch<<" "<<max<<endl;
         }
     }
-    cout<<max;
 }
