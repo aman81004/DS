@@ -10,7 +10,7 @@ int main(){
     int arr[m][n];
     for(int i=0;i<m;i++){
         for(int j=0;j<n;j++){
-            cin>>arr[m][n];
+            cin>>arr[i][j];
         }
     }
     cout<<"Array is:";
