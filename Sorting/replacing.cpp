@@ -1,6 +1,4 @@
 //Given an array arr[] containing n integer  the task is to find an integer(k) such that after replacing each and every index of the array by |ai-k| where i belongs to [1,n],results in a sorted array.If no such integer exists that satisfies the above condition then return -1.
-//Given an array with N distinct elements, convert the given array to a form
-//where all the elements are in the range from 0 to N-1.The oreder of elements is the same
 #include<iostream>
 #include<vector>
 #include<climits>
