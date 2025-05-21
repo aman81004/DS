@@ -1,29 +1,25 @@
 //Given a string consisting of lowercase.Print the character
 //that is occuring most no of times
-#include<iostream>
-#include<string>
+#include <iostream>
+#include <string>
+#include <vector>
 using namespace std;
-int main(){
+int main() {
     string str;
-    getLine(cin,str);
-    cout<<str<<endl;
-    int max=0;
-    for(int i=0;i<str.length();i++){
-        char ch=str[i];
-        int count=1;
-        for(int j=i+1;j<str.length();j++){
-            if(s[j]==s[i]) count++;
-        }
-        if(max<count) max=count;
+    getline(cin, str); 
+    cout << "Input: " << str << endl;
+    vector<int> freq(26, 0);
+    for (char ch : str) {
+        freq[ch - 'a']++;
     }
-    for(int i=0;i<str.length();i++){
-        char ch=str[i];
-        int count=1;
-        for(int j=i+1;j<str.length();j++){
-            if(s[j]==s[i]) count++;
-        }
-        if(count==max){
-            cout<<ch<<" "<<max<<endl;
+    int maxFreq = 0;
+    char resultChar = ' ';
+    for (int i = 0; i < 26; i++) {
+        if (freq[i] > maxFreq) {
+            maxFreq = freq[i];
+            resultChar = 'a' + i;
         }
     }
+    cout << "Character occurring most: " << resultChar << " (" << maxFreq << " times)" << endl;
+    return 0;
 }
