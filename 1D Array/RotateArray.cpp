@@ -32,7 +32,7 @@ int main(){
     cout<<"Array is ";
     display(v);
     n=v.size();
-    int k;
+    int k; 
     cout<<"Rotating steps:";
     cin>>k;
     reversePart(0,n-k-1,v);
